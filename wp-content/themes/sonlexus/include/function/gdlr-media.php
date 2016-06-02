@@ -653,6 +653,8 @@
 			$settings['num-fetch'] = empty($settings['num-fetch'])? 9999: intval($settings['num-fetch']);
 			$paged = (get_query_var('paged'))? get_query_var('paged') : 1;
 			$num_page = ceil(sizeof($settings['slider']) / $settings['num-fetch']);
+			$settings['thumbnail-size'] =apply_filters('set-thumbnail-gallery');
+			
 			
 			$ret  = '<div class="gdlr-gallery-item gdlr-item" ' . $item_id . $margin_style . '>';
 			foreach($settings['slider'] as $slide_id => $slide){
@@ -664,7 +666,9 @@
 					}			
 					$ret .= '<div class="gallery-column ' . gdlr_get_column_class('1/' . $settings['gallery-columns']) . '">';
 					$ret .= '<div class="gallery-item">';
-					
+
+
+
 					if( empty($slide['slide-link']) || $slide['slide-link'] == 'none' ){
 						$ret .= gdlr_get_image($slide_id, $settings['thumbnail-size']);
 					}else if($slide['slide-link'] == 'url' || $slide['slide-link'] == 'attachment'){		

@@ -201,3 +201,25 @@ div#html5-watermark {
 .portfolio-item-filter .gdlr-saperator:nth-of-type(2) ,#portfolio-home .portfolio-excerpt{
 	display: none;
 }
+#service-home .gdlr-item-title-wrapper.pos-center .gdlr-item-title-caption{margin-top:0}
+.gdlr-stunning-text-item.with-padding.gdlr-button-on{padding-right: 320px;}
+
+.quote-form p{
+	color: white;
+}
+.quote-form .wpcf7 input[type="submit"]{
+	width: 200px;
+	color: #4b4b4b;    background: #FFEB3B;
+}
+.quote-form{
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 30px;
+	background: #455779;
+	box-shadow: 1px 1px 5px #4b4b4b;
+	border-radius: 3px;
+}
+section#content-section-3 h3.gdlr-item-title.gdlr-skin-title.gdlr-skin-border {
+	font-size: 35px;
+	margin: 0;
+}

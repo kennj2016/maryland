@@ -47,11 +47,11 @@
 	text-transform: uppercase;
 
 }
-.textwidget.social img{margin-right: 10px;}
+
 .aligncenter {
 	border-radius: 9px;
 }
-#hero-home,#service-home {border-top:5px solid #ECECEC}
+#hero-home,#service-home {/* border-top:5px solid #ECECEC */}
 #hero-home .gdlr-title-item .gdlr-item-title-wrapper .gdlr-item-title{font-size: 3em;color:white}
 #hero-home .gdlr-item-title-wrapper.pos-center .gdlr-item-title-caption{margin: 5px;font-size: 1.5em ;color:white;}
 .btn-lg-orange {
@@ -140,4 +140,64 @@
 .exo{
 	font-family: 'Exo', sans-serif;
 }
+
+.gdlr-main-menu > li:hover > a, .gdlr-main-menu > li.current-menu-item > a, .gdlr-main-menu > li.current-menu-ancestor > a{background: #9b1a21;background: rgba(26, 106, 155, 0.11);}
+.gdlr-main-menu > li > a, #gdlr-menu-search-button{color: #585354;}
+.gdlr-main-menu > li:hover > a, .gdlr-main-menu > li.current-menu-item > a, .gdlr-main-menu > li.current-menu-ancestor > a{color: #464040;opacity: 1;filter: alpha(opacity=100);}
+.gdlr-main-menu > li > .sub-menu a:hover, .gdlr-main-menu > li > .sub-menu .current-menu-item > a, .gdlr-main-menu > li > .sub-menu .current-menu-ancestor > a, .gdlr-main-menu > li > .sf-mega a:hover, .gdlr-main-menu > li > .sf-mega .current-menu-item > a, .gdlr-main-menu > li > .sf-mega .current-menu-ancestor > a{ color: #ffffff; } .gdlr-main-menu .gdlr-normal-menu li > a.sf-with-ul:after { border-left-color: #ffffff; }
+.gdlr-main-menu .sf-mega-section-inner > ul > li > a:hover, .gdlr-main-menu .sf-mega-section-inner > ul > li.current-menu-item > a { background-color: #2a2a2a; }
+.gdlr-item-title-wrapper .gdlr-item-title, .gdlr-result-by-month-header{color: #F6C159;border-color: #8BC34A;margin-bottom: 20px;}
+.portfolio-item-filter, .portfolio-item-filter a, .fixture-result-item-filter, .fixture-result-item-filter a, .player-item-filter, .player-item-filter a{ color: #787878; }
+.gdlr-soccer-player-general-info-wrapper{ background-color: #A73233; }
+.gdlr-soccer-player-general-info-right, .single-player .gdlr-soccer-player-title, .single-player .gdlr-soccer-player-title-info{ color: #ffffff; }
+.gdlr-soccer-player-tab-title-wrapper{ background-color: #f0f0f0; }
+.gdlr-soccer-player-tab-title-wrapper, .gdlr-soccer-player-tab-title-wrapper a{ color: #787878; }
+.gdlr-soccer-player-tab-title-wrapper a:hover, .gdlr-soccer-player-tab-title-wrapper a.active{ color: #393939; }
+.gdlr-soccer-tab-player-info li { background-color: #f3f3f3; }
+.gdlr-soccer-tab-player-info li { border-top-color: #e1e1e1; }
+.gdlr-soccer-tab-player-info li { color: #555555; }
+.gdlr-soccer-single-player-stats-tab.gdlr-item{ border-top-color: #545454; }
+.gdlr-soccer-single-player-stats-tab, .gdlr-soccer-single-player-stats-tab a{ color: #787878; }
+.gdlr-soccer-single-player-stats-tab a:hover, .gdlr-soccer-single-player-stats-tab a.active{ color: #393939; }
+.gdlr-soccer-tab-player-stats li { background-color: #a73233; }
+.gdlr-soccer-tab-player-stats li { border-top-color: #cc6161; }
+.gdlr-soccer-tab-player-stats li { color: #ffffff; }
+.gdlr-modern-player .gdlr-modern-player-item-overlay, .gdlr-classic-player .gdlr-soccer-player-thumbnail{ background-color: #aa4243; }
+.gdlr-classic-player .gdlr-soccer-player-squad, .gdlr-classic-player .gdlr-soccer-player-title a{ color: #353535; }
+.gdlr-classic-player .gdlr-soccer-player-position{ color: #9a9a9a; }
+.gdlr-modern-player .gdlr-modern-player-item-content, .gdlr-modern-player .gdlr-modern-player-item-content a, .gdlr-modern-player .gdlr-modern-player-item-content a:hover{ color: #ffffff; }
+.gdlr-soccer-match-results-wrapper{ color: #ffffff; }
+.gdlr-soccer-match-results-overlay{ background-color: #a73233; }
+.upcoming-match-overlay{ background-color: #aa4243; }
+.upcoming-match-info-overlay{ background-color: #000000; }
+.upcoming-match-item-wrapper, .upcoming-match-item-wrapper a{ color: #ffffff; }
+.small-result-item.even, .result-in-month.even{ background-color: #f3f3f3; }
+.small-result-item.odd, .result-in-month.odd{ background-color: #ebebeb; }
+.gdlr-small-league-table th{ background-color: #212121; } .gdlr-small-league-table tr:first-child{ border-color: #212121; }
+.gdlr-small-league-table th{ color: #ffffff; }
+.gdlr-small-league-table{ background-color: #f5f5f5; }
+.gdlr-small-league-table *{ border-color: #dedede; }
+.gdlr-league-table tr th{ color: #ffffff; }
+.gdlr-league-table tr th{ border-color: #000000; }
+.gdlr-league-table .gdlr-table-first-head th{ background-color: #373737; }
+.gdlr-league-table .gdlr-table-second-head th{ background-color: #212121; }
+.gdlr-league-table tr td{ border-color: #e1e1e1; }
+.gdlr-league-table tr:nth-child(even) td{ background-color: #ebebeb; }
+.gdlr-league-table tr:nth-child(odd) td{ background-color: #f3f3f3; }
+html .woocommerce .quantity .plus, html .woocommerce .quantity .minus, html .woocommerce #content .quantity .plus, html .woocommerce #content .quantity .minus,
+html .woocommerce-page .quantity .plus, html .woocommerce-page .quantity .minus, html .woocommerce-page #content .quantity .plus,
+html .woocommerce-page #content .quantity .minus { border: 1px solid #a0a0a0; }
+html .woocommerce .quantity .plus, html .woocommerce .quantity .minus, html .woocommerce #content .quantity .plus, html .woocommerce #content .quantity .minus,
+html .woocommerce-page .quantity .plus, html .woocommerce-page .quantity .minus, html .woocommerce-page #content .quantity .plus,
+html .woocommerce-page #content .quantity .minus { color: #ffffff; }
+body.single.single-post .gdlr-blog-full .gdlr-blog-thumbnail img {
+	display: none;
+}
+div#html5-watermark {
+	opacity: 0 !important;
+}
+
 /*son*/
+.portfolio-item-filter .gdlr-saperator:nth-of-type(2) ,#portfolio-home .portfolio-excerpt{
+	display: none;
+}

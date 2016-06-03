@@ -223,3 +223,44 @@ section#content-section-3 h3.gdlr-item-title.gdlr-skin-title.gdlr-skin-border {
 	font-size: 35px;
 	margin: 0;
 }
+
+.footer-wrapper .copyright-wrapper {
+	border-color: #292F38;
+}
+.copyright-wrapper {
+	color: #828282;
+}
+.copyright-wrapper {
+	background-color: #292F38;
+}
+.footer-wrapper {
+	color: #E2E0E0;
+}
+.footer-wrapper {
+	background-color: #313944;
+}
+.footer-wrapper {
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+.footer-wrapper a {
+	color: #EAE7E7;
+}
+.footer-wrapper a {
+	cursor: pointer;
+}
+#client3,#client4,#client5{
+	margin-top: 30px;
+}
+#client-title .gdlr-item-title-wrapper.pos-center .gdlr-item-title-caption {
+	margin: 0;
+	font-size: 13px;
+	color: #CCCBCA;
+	max-width: 600px;
+	margin: 0 auto;
+}
+#client-title .gdlr-title-item .gdlr-item-title-wrapper .gdlr-item-title{margin-bottom: 10px;}
+#client2 img{    width: 160px;}
+#service-home a{color: #454545}
+#itstaffing img{margin-top: 90px;    margin-bottom: 100px;}

@@ -653,8 +653,8 @@
 			$settings['num-fetch'] = empty($settings['num-fetch'])? 9999: intval($settings['num-fetch']);
 			$paged = (get_query_var('paged'))? get_query_var('paged') : 1;
 			$num_page = ceil(sizeof($settings['slider']) / $settings['num-fetch']);
-			$settings['thumbnail-size'] =apply_filters('set-thumbnail-gallery');
-			
+			$settings['thumbnail-size'] =apply_filters('set_thumbnail_gallery',$settings['thumbnail-size']);
+		
 			
 			$ret  = '<div class="gdlr-gallery-item gdlr-item" ' . $item_id . $margin_style . '>';
 			foreach($settings['slider'] as $slide_id => $slide){

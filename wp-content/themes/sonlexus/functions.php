@@ -88,6 +88,7 @@
 	
 	include_once( 'include/function/gdlr-page-item.php');
 	include_once( 'include/function/gdlr-blog-item.php');
+	include_once( 'include/function/gdlr-function-custom.php');
 	
 	// widget
 	include_once( 'include/widget/recent-comment.php');

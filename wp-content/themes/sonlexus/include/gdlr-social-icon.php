@@ -74,11 +74,12 @@
 			foreach( $gdlr_header_social_icon as $social_slug => $social_name ){
 				if( !empty($theme_option[$social_slug . '-header-social']) ){
 ?>
-<div class="social-icon">
-<a href="<?php echo $theme_option[$social_slug . '-header-social']; ?>" target="_blank" >
-<img width="32" height="32" src="<?php echo GDLR_PATH . '/images/' . $type . '/social-icon/' . $social_slug . '.png'; ?>" alt="<?php echo $social_name; ?>" />
-</a>
-</div>
+
+
+
+
+                    <li><a href="<?php echo $theme_option[$social_slug . '-header-social']; ?>"><span class="icofont icofont-social-<?php echo $social_slug; ?>"></span></a></li>
+
 <?php				
 				}
 			}

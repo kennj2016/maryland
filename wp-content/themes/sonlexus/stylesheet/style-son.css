@@ -1,14 +1,16 @@
 @import url(https://fonts.googleapis.com/css?family=Exo:400,100,200,300,500,600,700,800,900);
 /*son*/
 .sf-menu {
-	margin-left: 200px !important;
+	/* margin-left: 200px !important; */
 }
 .gdlr-logo{
-	position: fixed;
+	position: relative;
 	width: 200px;
-	padding-top: 11px;
+	padding: 0;
+	float: left;
 	z-index: 2;
-}.gdlr-navigation-wrapper.gdlr-fixed-nav{z-index: 1;}
+	padding-top: 16px;
+}.gdlr-navigation-wrapper.gdlr-fixed-nav{z-index: 1;position: relative;top: 0 !important;float: right;}
 .gdlr-page-title-wrapper {
 	padding: 275px 0px 13px 0px;
 	position: relative;
@@ -89,10 +91,10 @@
 }
 .master-slider-parent {
 	padding-bottom: 0px !important;
-	padding-top: 68px;
 }
 .gdlr-navigation-wrapper {
-	background: rgb(255, 255, 255);
+	background: none;
+	/* float: right; */
 }
 .overlay .ms-slide-bgcont{position: relative}
 .overlay .ms-slide-bgcont:after{
@@ -264,3 +266,162 @@ section#content-section-3 h3.gdlr-item-title.gdlr-skin-title.gdlr-skin-border {
 #client2 img{    width: 160px;}
 #service-home a{color: #454545}
 #itstaffing img{margin-top: 90px;    margin-bottom: 100px;}
+
+.gdlr-header-inner {
+	position: relative !important;
+	background: #1cb9c8;
+}
+.top-navigation-wrapper  .top-navigation-left{
+	position: relative;
+}
+.top-navigation-wrapper  .top-navigation-right{
+	position: relative;
+	float: right;
+	right: initial;
+	top: initial;
+	margin-right: 20px;
+}
+.top-navigation-wrapper {
+	color: #ffffff;
+	position: relative;
+	z-index: 999;
+	background: white;
+}
+.gdlr-header-wrapper.gdlr-no-height{
+	position: relative;
+	top: 0 !important;
+}
+.gdlr-navigation-wrapper.gdlr-fixed-nav #gdlr-menu-search-button,#gdlr-menu-search-button{
+	padding: 40px 0 0 0;
+
+}
+#gdlr-menu-search,.gdlr-navigation-wrapper.gdlr-fixed-nav #gdlr-menu-search-button,#gdlr-menu-search-button {
+
+	color: white;
+
+	float: right;
+
+	position: relative;
+
+	right: 0;
+}
+.gdlr-navigation-wrapper .gdlr-main-menu > li > a{
+	color: #fff;
+	font-size: 14px;
+	line-height: 70px;
+	text-transform: uppercase;
+	display: block;
+	padding: 0 18px;
+	font-weight: 600;
+	position: relative;
+	font-family: "Roboto",sans-serif;
+	font-weight: 500;
+}
+.social_icons li a::before {
+	position: absolute;
+	content: "";
+	-webkit-transition: 0.2s;
+	transition: 0.2s;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #1cb9c8;
+	-webkit-transform: scale(0);
+	transform: scale(0);
+	border-radius: 50%;
+	z-index: -1;
+}
+.social_icons li, .tiny_header .contact_lang li {
+	display: inline-block;
+}
+.social_icons {
+	display: inline-block;
+	float: right;
+}
+.social_icons li a {
+	font-size: 12px;
+}
+
+.social_icons li a {
+	line-height: 25px;
+	color: #1cb9c8;
+	display: block;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	border: 1px solid #1cb9c8;
+	border-radius: 50%;
+	margin-right: 5px;
+}
+.social_icons li a:hover {
+	color: #fff;
+}
+.social_icons li a::before {
+	position: absolute;
+	content: "";
+	-webkit-transition: 0.2s;
+	transition: 0.2s;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #1cb9c8;
+	-webkit-transform: scale(0);
+	transform: scale(0);
+	border-radius: 50%;
+	z-index: -1;
+}
+.social_icons li a {
+	width: 28px;
+	transition: 0.4s;
+}
+.social_icons li a:hover::before {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+header .contact_email {
+	float: left;
+}
+
+header .contact_email ul,.social_icons ul {
+	margin-bottom: 0;
+}
+header .contact_email ul li {
+	display: inline-block;
+	margin-right: 17px;
+}
+.top-navigation-container.container {
+	padding: 10px 0;
+}
+.contact_email ul li a, .contact_email ul li span {
+	color: #8e8e8e;
+	font-size: 12px;
+	font-weight: 300;
+}
+.contact_email ul li span i {
+	color: #1cb9c8;
+	font-size: 12px;
+	margin-right: 7px;
+}
+nav#gdlr-main-navigation{
+	float: left;
+	margin-right: 13px;
+}
+
+#gdlr-menu-search input[type="text"] {
+	margin: 0px;
+	background: transparent;
+	padding: 11px 10px;
+	/* background: white; */
+	/* border-radius: 2px; */
+	width: calc(100% - 48px);
+	color: #6f6e6e;
+}
+#gdlr-menu-search{position: absolute;top: 16px;background: none;right: 0;}
+#gdlr-menu-search #searchform{background: white;border-radius: 2px;}
+#gdlr-menu-search #searchform i{color: #4b4b4b;cursor: pointer}
+
+.wrap-search:hover #gdlr-menu-search{
+	display: block !important;
+}

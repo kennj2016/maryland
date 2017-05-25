@@ -125,8 +125,9 @@
 			}
 			
 			// include theme script / style
-			$array['script']['gdlr-script'] = GDLR_PATH . '/javascript/gdlr-script.js';			
-			
+			$array['script']['gdlr-script'] = GDLR_PATH . '/javascript/main.js';
+			$array['script']['main'] = GDLR_PATH . '/javascript/gdlr-script.js';
+
 			// include custom style at the last
 			$multisite = get_current_blog_id();
 			if( empty($multisite) || $multisite == 1 ){
@@ -134,7 +135,7 @@
 			}else{
 				$array['style']['style-custom'] = GDLR_PATH . '/stylesheet/style-custom' . $multisite . '.css';			
 			}
-			
+
 			return $array;
 		}
 	}	

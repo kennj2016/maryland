@@ -15,8 +15,10 @@
 	?>
 	<title><?php bloginfo('name'); ?>  <?php wp_title(); ?></title>
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-	
-	<?php 
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="<?php echo GDLR_PATH . '/stylesheet/icofont.css'; ?>">
+    <?php
 		if( !empty($gdlr_post_option) ){ $gdlr_post_option = json_decode($gdlr_post_option, true); }
 		
 		wp_head(); 
@@ -62,17 +64,21 @@
 		<div class="top-navigation-wrapper">
 			<div class="top-navigation-container container">
 				<div class="top-navigation-left">
-					<div class="top-navigation-left-text">
-					<?php 
-							if( !empty($theme_option['top-bar-right-text']) ) 
-								echo gdlr_text_filter($theme_option['top-bar-right-text']); 
-					?>
-					</div>
+                    <div class="contact_email">
+                        <ul>
+                            <li><span><i class="icofont icofont-phone"></i>Call: </span><a href="tel:1234567890">0123 (1234) 7894</a></li>
+                            <li><span><i class="icofont icofont-envelope"></i>Email: </span><a href="mailto:youremail@gmail.com">youremail@gmail.com</a></li>
+                        </ul>
+                    </div>
+
 				</div>
 				<div class="top-navigation-right">
-					<div class="top-social-wrapper">
-						<?php gdlr_print_header_social(); ?>
-					</div>						
+                    <div class="social_icons">
+                        <ul>
+                            <?php gdlr_print_header_social(); ?>
+                        </ul>
+                    </div>
+
 				</div>
 				<div class="clear"></div>
 			</div>

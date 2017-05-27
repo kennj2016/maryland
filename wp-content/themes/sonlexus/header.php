@@ -51,17 +51,9 @@
 		// page style
 		if( empty($gdlr_post_option) || empty($gdlr_post_option['page-style']) || $gdlr_post_option['page-style'] == 'normal' || $gdlr_post_option['page-style'] == 'no-footer'){
 
-			$header_background = '';
-			if( !empty($gdlr_post_option['header-background']) ){
-				if( is_numeric($gdlr_post_option['header-background']) ){
-					$image_src = wp_get_attachment_image_src($gdlr_post_option['header-background'], 'full');	
-					$header_background = ' style="background-image: url(\'' . $image_src[0] . '\');" ';
-				}else{
-					$header_background = ' style="background-image: url(\'' . $gdlr_post_option['header-background'] . '\');" ';
-				}
-			}			  
+
 	?>
-	<header class="gdlr-header-wrapper <?php echo (!empty($gdlr_post_option['no-header-height']) && $gdlr_post_option['no-header-height'] == 'enable')? 'gdlr-no-height': ''; ?>" <?php echo $header_background; ?> >
+	<header class="gdlr-header-wrapper <?php echo (!empty($gdlr_post_option['no-header-height']) && $gdlr_post_option['no-header-height'] == 'enable')? 'gdlr-no-height': ''; ?>">
 		<!-- top navigation -->
 		<?php if( empty($theme_option['enable-top-bar']) || $theme_option['enable-top-bar'] == 'enable' ){ ?>
 		<div class="top-navigation-wrapper">

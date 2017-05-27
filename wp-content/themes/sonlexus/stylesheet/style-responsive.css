@@ -4,6 +4,7 @@ html body{ min-width: 300px; }
 
 /*--- tablet ---*/
 
+
 @media screen and (min-width: 959px) and (max-width: 1200px){
 	.font1 {
 		top: 100px !important;
@@ -35,6 +36,12 @@ html body{ min-width: 300px; }
 	.btn1 a{padding: 0 20px;}
 	.btn2 {left: 200px !important;}
 	.btn2 a{padding: 0 20px;}
+}
+@media screen and (min-width: 959px){
+	#section-contact p:nth-child(3),#section-contact p:nth-child(2){
+		width: 50%;
+		float: left;
+	}
 }
 @media only screen and (max-width: 959px) {
 	body .container{ max-width: 768px; }	
@@ -105,6 +112,7 @@ html body{ min-width: 300px; }
 }
 
 /*--- mobile landscape style ---*/
+
 @media only screen and (max-width: 767px) {
 	body .container{ max-width: 420px; }
 	body .body-wrapper.gdlr-boxed-style { max-width: 460px; }

@@ -3,16 +3,31 @@
  * The template for displaying a header title section
  */
 	global $theme_option, $gdlr_post_option;
+
+    $header_background = '';
+    if( !empty($gdlr_post_option['header-background']) ){
+        if( is_numeric($gdlr_post_option['header-background']) ){
+            $image_src = wp_get_attachment_image_src($gdlr_post_option['header-background'], 'full');
+            $header_background = ' style="background-image: url(\'' . $image_src[0] . '\');" ';
+        }else{
+            $header_background = ' style="background-image: url(\'' . $gdlr_post_option['header-background'] . '\');" ';
+        }
+    }
 ?>
 
 	<?php if( is_page() && (empty($gdlr_post_option['show-title']) || $gdlr_post_option['show-title'] != 'disable') ){ ?>
 	<?php $page_background = ''; ?>
-		<div class="gdlr-page-title-wrapper" >
+		<div class="gdlr-page-title-wrapper"  <?php echo $header_background; ?>>
 			<div class="gdlr-page-title-container container" >
 				<h1 class="gdlr-page-title"><?php the_title(); ?></h1>
 				<?php if( !empty($gdlr_post_option['page-caption']) ){ ?>
 				<span class="gdlr-page-caption"><?php echo gdlr_text_filter($gdlr_post_option['page-caption']); ?></span>
 				<?php } ?>
+
+                <div class="breadcrumb">
+                    <?php echo bcn_display(); ?>
+                </div>
+
 			</div>	
 		</div>	
 	<?php }else if( is_single() && $post->post_type == 'post' ){ 

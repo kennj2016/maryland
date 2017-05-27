@@ -10,19 +10,30 @@
 	float: left;
 	z-index: 2;
 	padding-top: 23px;
+	text-align: left;
 }.gdlr-navigation-wrapper.gdlr-fixed-nav{z-index: 1;position: relative;top: 0 !important;float: right;}
+.gdlr-page-title-wrapper::before {
+	position: absolute;
+	content: "";
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background: -webkit-linear-gradient(left, rgba(0,0,0,0.9) 33%,rgba(0,0,0,0.44) 67%,rgba(76,76,76,0) 100%);
+	background: linear-gradient(to right, rgba(0,0,0,0.9) 33%,rgba(0,0,0,0.44) 67%,rgba(76,76,76,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6000000', endColorstr='#004c4c4c',GradientType=1 );
+}
 .gdlr-page-title-wrapper {
-	padding: 275px 0px 13px 0px;
+	padding: 142px 0px 67px 0px;
 	position: relative;
 	text-align: center;
 	line-height: 1;
 	z-index: 1;
+	background-size: cover;
 }
 .gdlr-page-title, .gdlr-page-title-gimmick {
 	color: #ffffff;
-	background: rgba(0,0,0,0.3);
-	width: 200%;
-	margin-left: -50% !important;
+	text-align: left;
 }
 .gdlr-video-item.gdlr-item {
 	padding: 10px;
@@ -221,6 +232,11 @@ section#content-section-3 h3.gdlr-item-title.gdlr-skin-title.gdlr-skin-border {
 
 .footer-wrapper .copyright-wrapper {
 	border-color: #292F38;
+	padding: 8px 0;
+	background: #0e181e;
+	color: white;
+	z-index: 2;
+	position: relative;
 }
 .copyright-wrapper {
 	color: #828282;
@@ -233,12 +249,17 @@ section#content-section-3 h3.gdlr-item-title.gdlr-skin-title.gdlr-skin-border {
 }
 .footer-wrapper {
 	background-color: #313944;
-}
-.footer-wrapper {
+
 	position: relative;
 	background-repeat: no-repeat;
 	background-position: right top;
+	background-image: url(../images/footer_bg.jpg);
+	background-size: cover;
+	position: relative;
+	background-attachment: fixed;
+
 }
+
 .footer-wrapper a {
 	color: #EAE7E7;
 }
@@ -375,7 +396,9 @@ section#content-section-3 h3.gdlr-item-title.gdlr-skin-title.gdlr-skin-border {
 header .contact_email {
 	float: left;
 }
-
+header .contact_email ul{
+	margin: 0;
+}
 header .contact_email ul,.social_icons ul {
 	margin-bottom: 0;
 }
@@ -744,10 +767,18 @@ body .ms-skin-default .ms-slide .ms-slide-vcbtn { top: auto; bottom: 60px; right
 	letter-spacing: 0;
 	text-transform: none;
 	border-color: transparent;
-	padding: 13px 49px;
+	padding: 13px 60px;
 	float: left;
 	background: #1cb9c8;
 	margin-top: 20px;
+	border-radius: 4px;
+	border: 1px solid #1cb9c8;
+}
+
+#section-contact .wpcf7 input[type="submit"]:hover {
+	background: #fff;
+	border: 1px solid #1cb9c8;
+	color: #1cb9c8;
 }
 #section-contact input[type="text"],#section-contact  input[type="email"],#section-contact  input[type="password"],#section-contact  textarea {
 	background-color: #ffffff;
@@ -820,6 +851,81 @@ body .ms-skin-default .ms-slide .ms-slide-vcbtn { top: auto; bottom: 60px; right
 	top: calc(100% + 20px);
 }
 .gdlr-main-menu > li > .sub-menu a, .gdlr-main-menu > li > .sf-mega a {
-	 color: #bebebe;
-	 font-size: 15px;
- }
+	color: #bebebe;
+	font-size: 15px;
+}
+
+element.style {
+}
+
+.owl-carousel .owl-item img {
+	display: block;
+	width: auto !important;
+	-webkit-transform-style: preserve-3d;
+	-webkit-filter: grayscale(1);
+	-o-filter: grayscale(1);
+	filter: grayscale(1);
+	cursor: pointer;
+}
+
+.owl-carousel .owl-item img:hover {
+	-webkit-transform-style: preserve-3d;
+	-webkit-filter: grayscale(0);
+	-o-filter: grayscale(0);
+	filter: grayscale(0);
+
+}
+
+
+.owl-carousel .owl-item img {
+	display: block;
+	width: auto !important;
+	-webkit-transform-style: preserve-3d;
+}
+.tcowl-wrap .tcowl-nav .owl-controls {
+	display: none;
+}
+.footer-container {
+	padding: 100px 0;
+}
+.footer-wrapper{
+	position: relative;
+}
+.footer-wrapper:before{
+	position: absolute;
+	z-index: 0;
+	left: 0;
+	top:0;
+	background: rgba(27,41,50,0.95);
+	width: 100%;
+	height: 100%;
+	content: '';
+}
+.widget_recent_entries ul li, .widget_recent_comments ul li, .widget_pages ul li, .widget_rss ul li, .widget_archive ul li, .widget_categories ul li, .widget_nav_menu ul li, .widget_meta ul li {
+	border-bottom-width: 0;
+
+}
+
+.widget_recent_entries ul li a{
+	display: block;
+}
+.gdlr-header-wrapper{
+	background-repeat: no-repeat;
+	background-position-y: 116px;
+	background-size: contain;
+}
+.breadcrumb a{
+	color: white;
+}
+.breadcrumb{
+	text-align: left;
+}
+header .gdlr-page-title-wrapper .gdlr-page-title-container .gdlr-page-title{
+	margin: 11px 0 !important;
+}
+header .gdlr-page-title-wrapper .gdlr-page-title-container{
+	margin-top: -79px;
+}
+ #gdlr-responsive-navigation.dl-menuwrapper ul {
+	background-color: #1f303b;
+}

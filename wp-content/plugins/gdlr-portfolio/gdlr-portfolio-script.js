@@ -35,8 +35,14 @@
 			data: {'action': 'gdlr_get_portfolio_ajax', 'args': args},
 			error: function(a, b, c){ console.log(a, b, c); },
 			success: function(data){
-				now_loading.css('background-image','none').slideUp(function(){ $(this).remove(); });	
-			
+				now_loading.css('background-image','none').slideUp(function(){ $(this).remove(); });
+
+                $('.venobox').venobox({
+                    numeratio: true
+                });
+
+                console.log(1);
+
 				var port_item = $(data).hide();
 				if( animate_complete ){
 					gdlr_bind_portfolio_item(port_holder, port_item);

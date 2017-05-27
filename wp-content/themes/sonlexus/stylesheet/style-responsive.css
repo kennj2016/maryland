@@ -3,6 +3,39 @@ html body{ min-width: 300px; }
 #gdlr-responsive-navigation{ display: none; }
 
 /*--- tablet ---*/
+
+@media screen and (min-width: 959px) and (max-width: 1200px){
+	.font1 {
+		top: 100px !important;
+		left: 50px !important;
+
+	}
+	.font2 {
+		top: 150px !important;
+		left: 50px !important;
+	}
+	.font3 {
+		top: 180px !important;
+		left: 50px !important;
+
+	}
+	.font1 h1{
+		font-size: 15px !important;	font-weight: 400 !important;
+	}
+	.font2 h1{
+		font-size: 14px !important;	font-weight: 400 !important;
+	}
+	.font3 h1{
+		font-size: 13px !important;	font-weight: 400 !important;
+		text-transform: capitalize !important;
+
+	}
+	.btn1,.btn2 {top: 220px !important;}
+	.btn1 {left: 50px !important;}
+	.btn1 a{padding: 0 20px;}
+	.btn2 {left: 200px !important;}
+	.btn2 a{padding: 0 20px;}
+}
 @media only screen and (max-width: 959px) {
 	body .container{ max-width: 768px; }	
 	body .body-wrapper.gdlr-boxed-style { max-width: 808px; }
@@ -21,6 +54,54 @@ html body{ min-width: 300px; }
 	
 	/*--- fixture ---*/
 	span.gdlr-upcoming-match-team.gdlr-left, span.gdlr-upcoming-match-team.gdlr-right{ display: block; font-size: 20px; }
+
+	.font1 {
+		top: 50px !important;
+		left: 50px !important;
+
+	}
+	.font2 {
+		top: 80px !important;
+		left: 50px !important;
+	}
+	.font3 {
+		top: 100px !important;
+		left: 50px !important;
+
+	}
+	.font1 h1{
+		font-size: 13px !important;	font-weight: 400 !important;
+	}
+	.font2 h1{
+		font-size: 12px !important;	font-weight: 400 !important;
+	}
+	.font3 h1{
+		font-size: 10px !important;	font-weight: 400 !important;
+		text-transform: capitalize !important;
+
+	}
+	.btn1,.btn2 {top: 150px !important;}
+	.btn1 {left: 50px !important;}
+	.btn1 a{padding: 0 20px;}
+	.btn2 {left: 200px !important;}
+	.btn2 a{padding: 0 20px;}
+
+	.top-navigation-wrapper .top-navigation-right .social_icons ul{
+		display: inline-block;
+		margin-top: 12px;
+	}
+	.top-navigation-wrapper .top-navigation-right .social_icons {
+		float: none;
+
+	}
+	.top-navigation-wrapper .top-navigation-right {
+		position: relative;
+		float: none;
+		right: initial;
+		top: initial;
+		width: 100%;
+		text-align: center;
+	}
 }
 
 /*--- mobile landscape style ---*/
@@ -150,6 +231,44 @@ html body{ min-width: 300px; }
 	.gdlr-league-table td:nth-child(11),
 	.gdlr-league-table td:nth-child(12),
 	.gdlr-league-table td:nth-child(13){ display: none; }
+
+
+	body .gdlr-header-inner .gdlr-header-container{
+		width: 100%;
+		max-width: 100%;
+	}
+	body .gdlr-logo img{max-width: 132px;margin-left: 40px;}
+	body .gdlr-logo {
+		float: left;
+		width: 100%;
+		clear: both;
+		max-width: 100%;
+		text-align: left;
+	}
+	#gdlr-responsive-navigation .dl-trigger{
+		margin-right: 10px;
+		background: #1cb9c8 !important;
+	}
+	.dl-menuwrapper button:after {
+		content: '';
+		position: absolute;
+		width: 68%;
+		height: 4px;
+		background: #fbfbfb;
+		top: 8px;
+		left: 17%;
+		box-shadow: 0 10px 0 #fff, 0 20px 0 #fff;
+	}
+	.dl-menuwrapper li.dl-back > a {
+		background: #1f303b;
+	}
+	#gdlr-responsive-navigation.dl-menuwrapper ul {
+		background: #1f303b;
+	}
+	.dl-menuwrapper > .dl-menu, .dl-menuwrapper > .dl-submenu {
+		width: 100%;
+	}
+
 }
 
 /*--- mobile portrait style ---*/
@@ -162,3 +281,5 @@ html body{ min-width: 300px; }
 	.gdlr-item-title-head .gdlr-flex-prev,
 	.gdlr-item-title-head .gdlr-flex-next{ display: none; }
 }
+
+

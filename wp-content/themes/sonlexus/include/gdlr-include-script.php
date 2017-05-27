@@ -117,14 +117,18 @@
 			if( is_page() && gdlr_search_page_builder($all_page_builder, 'wrapper', 'parallax-bg-wrapper', array('type', 'video')) ){
 				$array['style']['mbytplayer'] = GDLR_PATH . '/plugins/mbyt-player/YTPlayer.css';
 				$array['script']['mbytplayer'] = GDLR_PATH . '/plugins/mbyt-player/jquery.mb.YTPlayer.js';
-			}	
-				
-			// include responsive style
+			}
+
+
+            $array['style']['style-venobox'] = GDLR_PATH . '/stylesheet/venobox.css';
+
+            // include responsive style
 			if( empty($theme_option['enable-responsive-mode']) || $theme_option['enable-responsive-mode'] == 'enable' ){
 				$array['style']['style-responsive'] = GDLR_PATH . '/stylesheet/style-responsive.css';	
 			}
 			
 			// include theme script / style
+			$array['script']['venobox'] = GDLR_PATH . '/javascript/venobox.min.js';
 			$array['script']['gdlr-script'] = GDLR_PATH . '/javascript/main.js';
 			$array['script']['main'] = GDLR_PATH . '/javascript/gdlr-script.js';
 

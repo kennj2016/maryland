@@ -771,13 +771,7 @@ body .ms-skin-default .ms-nav-prev,
 body .ms-skin-default .ms-nav-next{ width: 27px; height: 46px; margin-top: -13px; }
 body .ms-skin-default .ms-nav-prev{ background: url('images/master-slider-left.png'); }
 body .ms-skin-default .ms-nav-next{ background: url('images/master-slider-right.png'); }
-body .ms-skin-default .ms-bullet { background-image: none; ;
-	border-width: 2px; border-style: solid; border-color: #ffffff
-	-moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%;
-	transition: background-color 200ms; -moz-transition: background-color 200ms;
-	-o-transition: background-color 200ms; -webkit-transition: background-color 200ms;
-	margin-bottom: 20px; width: 8px; height: 8px;
-}
+
 body .ms-skin-default .ms-bullet-selected { background-image: none; }
 body .ms-skin-default .ms-inner-controls-cont { position: static; }
 body .ms-skin-default .ms-bullet.ms-bullet-selected,

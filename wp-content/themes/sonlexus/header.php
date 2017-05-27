@@ -43,6 +43,9 @@
 	
 	$body_wrapper .= ($theme_option['enable-float-menu'] != 'disable')? ' float-menu': '';
 ?>
+
+
+
 <div class="body-wrapper <?php echo $body_wrapper; ?>" data-home="<?php echo home_url(); ?>" >
 	<?php 
 		// page style

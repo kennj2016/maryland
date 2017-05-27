@@ -112,6 +112,28 @@
 			return $ret;
 		}
 	}
+
+    if( !function_exists('gdlr_get_url_image') ){
+        function gdlr_get_url_image($image, $size = 'full', $link = array(), $attr = ''){
+            if( empty($image) ) return '';
+
+            if( is_numeric($image) ){
+                $alt_text = get_post_meta($image , '_wp_attachment_image_alt', true);
+                $image_src = wp_get_attachment_image_src($image, $size);
+                if( empty($image_src) ) return '';
+
+                if( $link === true ){
+                    $image_full = wp_get_attachment_image_src($image, 'full');
+                    $link = array('url'=>$image_full[0]);
+                }else if( !empty($link) && empty($link['url']) ){
+                    $image_full = wp_get_attachment_image_src($image, 'full');
+                    $link['url'] = $image_full[0];
+                }
+                $ret = $image_src[0] ;
+            }
+            return $ret;
+        }
+    }
 	function gdlr_get_attachment_info($attachment_id, $type = '') {
 		$attachment = get_post($attachment_id);
 		if( !empty($attachment) ){

@@ -67,6 +67,7 @@
 			// create the portfolio filter
 			$settings['num-excerpt'] = empty($settings['num-excerpt'])? 0: $settings['num-excerpt'];
 			$settings['portfolio-size'] = str_replace('1/', '', $settings['portfolio-size']);
+
 			if( $settings['portfolio-filter'] == 'enable' ){
 			
 				// ajax infomation
@@ -94,6 +95,10 @@
 					
 					$ret .= '<span class="gdlr-saperator">|</span>';
 					$ret .= '<a class="gdlr-title-font ' . $filter_active . '" href="#" ';
+
+					if(empty($filter)){
+                        $filter = 'All';
+                    }
 					$ret .= 'data-category="' . $filter_id . '" >' . $filter . '</a>';
 					$filter_active = '';
 				}
@@ -303,17 +308,31 @@
 				&& empty($gdlr_related_section)){ $type = 'inside-';
 			}else{ $type = ''; }
 
+
 			switch($post_option[$type . 'thumbnail-type']){
 				case 'feature-image':
 					$image_id = get_post_thumbnail_id();
+
 					if( !empty($image_id) ){
 						if(!is_single() || $gdlr_related_section){
 							$ret  = gdlr_get_image($image_id, $size);
-							$ret .= '<a class="portfolio-overlay-wrapper" ' . gdlr_get_portfolio_thumbnail_link($post_option) . ' >';
+							$ret .= '
+							<div class="portfolio_item_top_layer">
+                                <div class="content_wrapper">
+                                    <div class="links">
+                                        <a href="'.gdlr_get_url_image($image_id).'" data-gall="portfolio" class="venobox vbox-item"><span class="icofont icofont-search-alt-2"></span></a>
+                                        <a '.gdlr_get_portfolio_thumbnail_link($post_option).' data-gall="portfolio" class="project_link"><span class="icofont icofont-link"></span></a>
+                                        <p class="tag">'.get_the_title().'</p>
+                                    </div>
+                                </div>
+                            </div>
+							
+							';
+							/*$ret .= '<a class="portfolio-overlay-wrapper" ' . gdlr_get_portfolio_thumbnail_link($post_option) . ' >';
 							$ret .= '<span class="portfolio-overlay" >&nbsp;</span>';
 							$ret .= '<span class="portfolio-icon" ></span>';
 							$ret .= '<i class="' . gdlr_get_portfolio_icon_class($post_option) . '" ></i>';
-							$ret .= '</a>';						
+							$ret .= '</a>';	*/
 						}else{
 							$ret  = gdlr_get_image($image_id, $size, true);
 						}
@@ -378,9 +397,9 @@
 				$ret .= gdlr_get_portfolio_thumbnail($port_option, $thumbnail_size);
 				$ret .= '</div>'; // portfolio-thumbnail
  
-				$ret .= '<h3 class="portfolio-title"><a ' . gdlr_get_portfolio_thumbnail_link($port_option, 'title') . ' >' . get_the_title() . '</a></h3>';
+				$ret .= '<h3 class="portfolio-title hidden"><a ' . gdlr_get_portfolio_thumbnail_link($port_option, 'title') . ' >' . get_the_title() . '</a></h3>';
 				$ret .= gdlr_get_portfolio_info(array('tag'));
-				$ret .= '<div class="portfolio-excerpt">' . get_the_excerpt() . '</div>';
+				$ret .= '<div class="portfolio-excerpt hidden">' . get_the_excerpt() . '</div>';
 				
 				$ret .= '</div>'; // gdlr-ux
 				$ret .= '</div>'; // gdlr-item
@@ -420,8 +439,7 @@
 			
 			return $ret;
 		}		
-	}	
-	
+	}
 	// print modern portfolio
 	if( !function_exists('gdlr_get_modern_portfolio') ){
 		function gdlr_get_modern_portfolio($query, $size, $thumbnail_size, $layout = 'fitRows'){
@@ -443,7 +461,7 @@
 				$ret .= '<div class="gdlr-ux gdlr-modern-portfolio-ux">';
 				
 				$port_option = json_decode(gdlr_decode_preventslashes(get_post_meta($post->ID, 'post-option', true)), true);
-				$ret .= '<div class="portfolio-thumbnail ' . gdlr_get_portfolio_thumbnail_class($port_option) . '">';
+				$ret .= '<div class="1 portfolio-thumbnail ' . gdlr_get_portfolio_thumbnail_class($port_option) . '">';
 				$ret .= gdlr_get_portfolio_thumbnail($port_option, $thumbnail_size);
 				$ret .= '</div>'; // portfolio-thumbnail	
 				

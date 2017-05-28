@@ -30,6 +30,7 @@
 	line-height: 1;
 	z-index: 1;
 	background-size: cover;
+	background-image: url(http://mmsoft.dev/wp-content/uploads/2016/02/breadcrumb_image.png);
 }
 .gdlr-page-title, .gdlr-page-title-gimmick {
 	color: #ffffff;
@@ -1019,4 +1020,22 @@ footer .es_widget_form input[type="text"] {
 }
 .footer-wrapper .widget.gdlr-widget{
 	margin-bottom: 30px;
+}
+.search-results .gdlr-page-title-wrapper .gdlr-page-caption{
+	text-align: left;
+	margin: 0;
+	font-size: 15px;
+	font-family: "Open Sans";
+}
+.gdlr-page-title-wrapper .gdlr-page-caption {
+	font-size: 14px;
+	margin: 14px 20px 0px;
+	display: block;
+	font-weight: normal;
+	text-align: left;
+	margin: 0;
+}
+body.single .gdlr-blog-full {
+	border-bottom: 0px;
+	padding-right: 20px;
 }

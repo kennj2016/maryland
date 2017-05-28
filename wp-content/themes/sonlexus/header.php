@@ -53,6 +53,8 @@
 
 
 	?>
+
+
 	<header class="gdlr-header-wrapper <?php echo (!empty($gdlr_post_option['no-header-height']) && $gdlr_post_option['no-header-height'] == 'enable')? 'gdlr-no-height': ''; ?>">
 		<!-- top navigation -->
 		<?php if( empty($theme_option['enable-top-bar']) || $theme_option['enable-top-bar'] == 'enable' ){ ?>
@@ -61,8 +63,8 @@
 				<div class="top-navigation-left">
                     <div class="contact_email">
                         <ul>
-                            <li><span><i class="icofont icofont-phone"></i>Call: </span><a href="tel:1234567890">0123 (1234) 7894</a></li>
-                            <li><span><i class="icofont icofont-envelope"></i>Email: </span><a href="mailto:youremail@gmail.com">youremail@gmail.com</a></li>
+                            <li><span><i class="icofont icofont-phone"></i>Call: </span><a href="tel:<?=$theme_option['site-phone'] ?>"><?=$theme_option['site-phone']; ?></a></li>
+                            <li><span><i class="icofont icofont-envelope"></i>Email: </span><a href="mailto:<?=$theme_option['site-phone'] ?>"><?=$theme_option['site-phone']; ?></a></li>
                         </ul>
                     </div>
 

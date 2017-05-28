@@ -133,7 +133,30 @@
 							'title' => __('General', 'gdlr_translate'),
 							'icon' => GDLR_PATH . '/include/images/icon-general.png',
 							'options' => array(
-								
+
+							    'info'=>array(
+
+                                    'title' => __('Site Info'),
+                                    'options' => array(
+                                        'site-phone' => array(
+                                            'title' => __('Phone', 'gdlr_translate'),
+                                            'type' => 'text',
+                                            'default' => '0972483047'
+                                        ),
+                                        'email' => array(
+                                            'title' => __('Email', 'gdlr_translate'),
+                                            'type' => 'text',
+                                            'default' => 'ngocson092@gmail.com'
+                                        ),
+                                        'address' => array(
+                                            'title' => __('Address', 'gdlr_translate'),
+                                            'type' => 'textarea',
+                                            'default' => 'House # 200 , Mohakhali , Dhaka'
+                                        ),
+                                    )
+
+                                ),
+
 								'page-style' => array(
 									'title' => __('Page Style', 'gdlr_translate'),
 									'options' => array(
@@ -503,9 +526,20 @@
 											'data-type' => 'pixel'
 										),									
 									)
-								),		
+								),
 
-								'page-title-background' => array(
+                                'footer-logo' => array(
+                                    'title' => __('Footer - Logo', 'gdlr_translate'),
+                                    'options' => array(
+                                        'logo-footer-id' => array(
+                                            'title' => __('Upload Footer Solid Logo', 'gdlr_translate'),
+                                            'button' => __('Set As Logo', 'gdlr_translate'),
+                                            'type' => 'upload'
+                                        )
+                                    )
+                                ),
+
+                                'page-title-background' => array(
 									'title' => __('Page Title Background', 'gdlr_translate'),
 									'options' => array(		
 										'default-page-title' => array(

@@ -41,7 +41,7 @@
 						<?php if( !empty($theme_option['copyright-left-text']) ) echo $theme_option['copyright-left-text']; ?>
 					</div>
 					<div class="copyright-right">
-						<?php if( !empty($theme_option['copyright-right-text']) ) echo $theme_option['copyright-right-text']; ?>
+						<?php if( !empty($theme_option['copyright-right-text']) ) echo do_shortcode($theme_option['copyright-right-text']); ?>
 					</div>
 					<div class="clear"></div>
 				</div>

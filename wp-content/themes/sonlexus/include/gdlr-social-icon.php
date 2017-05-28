@@ -75,9 +75,6 @@
 				if( !empty($theme_option[$social_slug . '-header-social']) ){
 ?>
 
-
-
-
                     <li><a href="<?php echo $theme_option[$social_slug . '-header-social']; ?>"><span class="icofont icofont-social-<?php echo $social_slug; ?>"></span></a></li>
 
 <?php				

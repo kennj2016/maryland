@@ -7,16 +7,16 @@ html body{ min-width: 300px; }
 
 @media screen and (min-width: 959px) and (max-width: 1200px){
 	.font1 {
-		top: 100px !important;
+		top: 200px !important;
 		left: 50px !important;
 
 	}
 	.font2 {
-		top: 150px !important;
+		top: 250px !important;
 		left: 50px !important;
 	}
 	.font3 {
-		top: 180px !important;
+		top: 280px !important;
 		left: 50px !important;
 
 	}
@@ -31,7 +31,7 @@ html body{ min-width: 300px; }
 		text-transform: capitalize !important;
 
 	}
-	.btn1,.btn2 {top: 220px !important;}
+	.btn1,.btn2 {top: 320px !important;}
 	.btn1 {left: 50px !important;}
 	.btn1 a{padding: 0 20px;}
 	.btn2 {left: 200px !important;}

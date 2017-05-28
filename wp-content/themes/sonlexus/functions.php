@@ -101,9 +101,7 @@
 	include_once( 'include/widget/twitter-widget.php');
 	include_once( 'include/widget/flickr-widget.php');
 	include_once( 'include/widget/video-widget.php');
-	include_once( 'include/widget/featured-player-widget.php');
-	include_once( 'include/widget/fixture-result-widget.php');
-	include_once( 'include/widget/league-table-widget.php');
+
 	
 	// plugin support
 	include_once( 'plugins/wpml.php');
@@ -112,7 +110,8 @@
 	include_once( 'plugins/woocommerce.php' );
 	include_once( 'plugins/twitteroauth.php' );
 	include_once( 'plugins/goodlayers-importer.php' );
-	
+	include_once( 'include/shortcode.php' );
+
 	if( empty($theme_option['enable-plugin-recommendation']) || $theme_option['enable-plugin-recommendation'] == 'enable' ){
 		include_once( 'include/plugin/gdlr-plugin-activation.php');
 	}

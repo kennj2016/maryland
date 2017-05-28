@@ -3,13 +3,19 @@
 .sf-menu .gdlr-normal-menu ul{ margin: 0; padding: 0; list-style: none; }
 .sf-menu .gdlr-normal-menu,
 .sf-menu .gdlr-normal-menu li{ position: relative; }
-.sf-menu .gdlr-normal-menu ul{ position: absolute; display: none; top: 100%; left: 0; z-index: 99; }
-/* .sf-menu .gdlr-normal-menu:hover > ul, */
+.sf-menu .gdlr-normal-menu ul{ position: absolute;    opacity: 0;
+	visibility: hidden;     top: calc(100% + 20px); left: 0; z-index: 99; transition: all .4s;}
+.sf-menu .gdlr-normal-menu:hover > ul,
 .sf-menu .gdlr-normal-menu li:hover > ul,
 .sf-menu .gdlr-normal-menu.sfHover > ul,
-.sf-menu .gdlr-normal-menu li.sfHover > ul { transition: all .4s; display: block; 	top:100%;}
+.sf-menu .gdlr-normal-menu li.sfHover > ul { transition: all .4s;     opacity: 1;
+	visibility: visible;; 	top:100%;}
 .sf-menu .gdlr-normal-menu a { display: block; position: relative; }
-.sf-menu .gdlr-normal-menu ul ul { top: 1px; left: 100%; margin-left: 1px; }
+.sf-menu .gdlr-normal-menu .sub-menu{
+	display: block !important;
+}
+
+
 
 
 /*--- goodlayers skin top level---*/

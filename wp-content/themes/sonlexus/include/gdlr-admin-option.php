@@ -240,7 +240,7 @@
 								
 								'portfolio-style' => array(),	
 
-								'soccer-style' => array(),	
+								'soccer-style' => array(),
 
 								'search-archive-style' => array(
 									'title' => __('Search - Archive Style', 'gdlr_translate'),
@@ -1538,7 +1538,7 @@
 											'title' => __('Single Player General Info Text', 'gdlr_translate'),
 											'type' => 'colorpicker',
 											'default' => '#ffffff',
-											'selector'=> '.gdlr-soccer-player-general-info-right, .single-player .gdlr-soccer-player-title, ' . 
+											'selector'=> '.gdlr-soccer-player-general-info-right, .single-player .gdlr-soccer-player-title, ' .
 												'.single-player .gdlr-soccer-player-title-info{ color: #gdlr#; } '
 										),
 										'player-overall-tab' => array(
@@ -1635,12 +1635,12 @@
 											'title' => __('Modern Player Item Overlay Text', 'gdlr_translate'),
 											'type' => 'colorpicker',
 											'default' => '#ffffff',
-											'selector'=> '.gdlr-modern-player .gdlr-modern-player-item-content, .gdlr-modern-player .gdlr-modern-player-item-content a, ' . 
+											'selector'=> '.gdlr-modern-player .gdlr-modern-player-item-content, .gdlr-modern-player .gdlr-modern-player-item-content a, ' .
 												'.gdlr-modern-player .gdlr-modern-player-item-content a:hover{ color: #gdlr#; } '
 										),
 									)
 								),
-								
+
 								'league-table-color' => array(
 									'title' => __('Soccer Table / Results', 'gdlr_translate'),
 									'options' => array(
@@ -1690,7 +1690,7 @@
 											'title' => __('Small League Table Head Background', 'gdlr_translate'),
 											'type' => 'colorpicker',
 											'default' => '#212121',
-											'selector'=> '.gdlr-small-league-table th{ background-color: #gdlr#; } ' . 
+											'selector'=> '.gdlr-small-league-table th{ background-color: #gdlr#; } ' .
 												'.gdlr-small-league-table tr:first-child{ border-color: #gdlr#; }'
 										),
 										'small-league-table-head-text' => array(

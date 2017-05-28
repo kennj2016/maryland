@@ -5,7 +5,11 @@
 
 
     $(window).load(function () {
-
+        setTimeout(function() {
+            $('.venobox').venobox({
+                numeratio: true
+            });
+        }, 1000);
 
     })
 

@@ -17,16 +17,16 @@
 
 		// hide the un-used elements
 		var animate_complete = false;
-		port_holder.slideUp(500, function(){
+		port_holder.fadeOut(500, function(){
 			animate_complete = true;
 		});
-		port_holder.siblings('.gdlr-pagination').slideUp(500, function(){
+		port_holder.siblings('.gdlr-pagination').fadeOut(500, function(){
 			$(this).remove();
 		});
 		
 		var now_loading = $('<div class="gdlr-now-loading"></div>');
 		now_loading.insertBefore(port_holder);
-		now_loading.slideDown();
+		now_loading.fadeIn();
 		
 		// call ajax to get portfolio item
 		$.ajax({
@@ -37,11 +37,7 @@
 			success: function(data){
 				now_loading.css('background-image','none').slideUp(function(){ $(this).remove(); });
 
-                $('.venobox').venobox({
-                    numeratio: true
-                });
 
-                console.log(1);
 
 				var port_item = $(data).hide();
 				if( animate_complete ){
@@ -49,6 +45,10 @@
 				}else{
 					setTimeout(function() {
 						gdlr_bind_portfolio_item(port_holder, port_item);
+
+                        $('.venobox').venobox({
+                            numeratio: true
+                        });
 					}, 500);
 				}	
 			}
@@ -60,7 +60,7 @@
 		if( port_holder ){
 			port_holder.replaceWith(port_item);
 		}
-		port_item.slideDown();
+		port_item.fadeIn();
 		
 		// bind events
 		port_item.each(function(){

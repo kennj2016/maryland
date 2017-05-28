@@ -1,4 +1,6 @@
 <?php
+$api_key = 'AIzaSyDBR5ZdnVj93Nz89CuQQbhPv7xWl5UJxRY';
+
 /*
 Plugin Name: WP Google Maps
 Plugin URI: http://www.wpgmaps.com
@@ -695,6 +697,7 @@ function wpgmaps_admin_edit_marker_javascript() {
 function wpgmaps_admin_javascript_basic() {
     global $wpdb;
     global $wpgmza_tblname_maps;
+    global $api_key;
     $ajax_nonce = wp_create_nonce("wpgmza");
 
 
@@ -787,7 +790,7 @@ function wpgmaps_admin_javascript_basic() {
         
         <script type="text/javascript">
             var gmapsJsHost = (("https:" == document.location.protocol) ? "https://" : "http://");
-            document.write(unescape("%3Cscript src='" + gmapsJsHost + "maps.google.com/maps/api/js?<?php echo $api_version_string; ?>sensor=false&libraries=places' type='text/javascript'%3E%3C/script%3E"));
+            document.write(unescape("%3Cscript src='" + gmapsJsHost + "maps.google.com/maps/api/js?<?php echo $api_version_string; ?>sensor=false&libraries=places&key=<?php echo $api_key; ?>' type='text/javascript'%3E%3C/script%3E"));
         </script>
 
         
@@ -1531,7 +1534,7 @@ function wpgmaps_admin_javascript_basic() {
 function wpgmaps_user_javascript_basic() {
     global $short_code_active;
     global $wpgmza_current_map_id;
-
+    global $api_key;
     if ($short_code_active) {
 
         $ajax_nonce = wp_create_nonce("wpgmza");
@@ -1604,7 +1607,7 @@ function wpgmaps_user_javascript_basic() {
         
         <script type="text/javascript">
             var gmapsJsHost = (("https:" == document.location.protocol) ? "https://" : "http://");
-            document.write(unescape("%3Cscript src='" + gmapsJsHost + "maps.google.com/maps/api/js?<?php echo $api_version_string; ?>sensor=false&libraries=places' type='text/javascript'%3E%3C/script%3E"));
+            document.write(unescape("%3Cscript src='" + gmapsJsHost + "maps.google.com/maps/api/js?<?php echo $api_version_string; ?>sensor=false&libraries=places&key=<?php echo $api_key; ?>' type='text/javascript'%3E%3C/script%3E"));
         </script>
        
         <script type="text/javascript" >

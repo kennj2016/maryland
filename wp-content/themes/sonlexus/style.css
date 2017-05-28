@@ -1070,7 +1070,7 @@ body.single .gdlr-blog-full{ border-bottom: 0px; }
 .portfolio-item-filter a{ margin-right: 17px; }
 .portfolio-item-filter .gdlr-saperator{ margin-right: 17px; vertical-align: text-bottom; }
 .portfolio-item-filter .gdlr-saperator:first-child{ display: none; }
-.gdlr-now-loading{ height: 32px; padding: 40px 0px 80px; display: none; background: url('images/dark/now-loading.gif') center no-repeat;  }
+.gdlr-now-loading{ height: 32px; padding: 40px 0px 80px; display: block; background: url('images/dark/now-loading1.gif') center no-repeat;  }
 
 /*--- list with icon ---*/
 .list-with-icon{ margin-bottom: 55px; padding-bottom: 0px; margin-top: 3px; }

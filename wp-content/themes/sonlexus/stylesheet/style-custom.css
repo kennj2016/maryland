@@ -41,15 +41,15 @@ h1, h2, h3, h4, h5, h6, .gdlr-title, .gdlr-title a{ color: #454545; }
 .gdlr-item-title-divider{ border-color: #c5c5c5; } .gdlr-item-title-wrapper.pos-left .gdlr-item-title:before, .gdlr-result-by-month-header:before{ color: #c5c5c5; }
 .gdlr-item-title-wrapper .gdlr-item-caption{ color: #9b9b9b; }
 body{ color: #808080; }
-a{ color: #aa4243; }
+a{ color: #1cb9c8; }
 a:hover{ color: #aa4243; }
 body *{ border-color: #e5e5e5; }
 .page-not-found-block{ background-color: #d65938; }
 .page-not-found-block{ color: #ffffff; }
 .page-not-found-search  .gdl-search-form input[type="text"]{ background-color: #963a20; }
 .page-not-found-search  .gdl-search-form input[type="text"]{ color: #d57f5c; }
-.gdlr-sidebar .gdlr-widget-title{ color: #aa4243; }
-.gdlr-sidebar .gdlr-widget-title:before{ color: #c5c5c5; }
+.gdlr-sidebar .gdlr-widget-title{ color: #1cb9c8; }
+.gdlr-sidebar .gdlr-widget-title:before{ color: #1cb9c8; }
 .gdlr-sidebar *{ border-color: #eeeeee; }
 .gdlr-sidebar ul li:before { border-color: #bdbdbd; }
 .gdl-search-form input{ background-color: #f7f7f7; }
@@ -143,42 +143,6 @@ table.style-2 tr:nth-child(even){ color: #949494; }
 .gdlr-pagination .page-numbers{ color: #979797; }
 .gdlr-pagination .page-numbers:hover, .gdlr-pagination .page-numbers.current{ background-color: #aa4243; }
 .gdlr-pagination .page-numbers:hover, .gdlr-pagination .page-numbers.current{ color: #ffffff; }
-.gdlr-soccer-player-general-info-wrapper{ background-color: #A73233; } 
-.gdlr-soccer-player-general-info-right, .single-player .gdlr-soccer-player-title, .single-player .gdlr-soccer-player-title-info{ color: #ffffff; } 
-.gdlr-soccer-player-tab-title-wrapper{ background-color: #f0f0f0; } 
-.gdlr-soccer-player-tab-title-wrapper, .gdlr-soccer-player-tab-title-wrapper a{ color: #787878; } 
-.gdlr-soccer-player-tab-title-wrapper a:hover, .gdlr-soccer-player-tab-title-wrapper a.active{ color: #393939; } 
-.gdlr-soccer-tab-player-info li { background-color: #f3f3f3; } 
-.gdlr-soccer-tab-player-info li { border-top-color: #e1e1e1; } 
-.gdlr-soccer-tab-player-info li { color: #555555; } 
-.gdlr-soccer-single-player-stats-tab.gdlr-item{ border-top-color: #545454; } 
-.gdlr-soccer-single-player-stats-tab, .gdlr-soccer-single-player-stats-tab a{ color: #787878; } 
-.gdlr-soccer-single-player-stats-tab a:hover, .gdlr-soccer-single-player-stats-tab a.active{ color: #393939; } 
-.gdlr-soccer-tab-player-stats li { background-color: #a73233; } 
-.gdlr-soccer-tab-player-stats li { border-top-color: #cc6161; } 
-.gdlr-soccer-tab-player-stats li { color: #ffffff; } 
-.gdlr-modern-player .gdlr-modern-player-item-overlay, .gdlr-classic-player .gdlr-soccer-player-thumbnail{ background-color: #aa4243; } 
-.gdlr-classic-player .gdlr-soccer-player-squad, .gdlr-classic-player .gdlr-soccer-player-title a{ color: #353535; } 
-.gdlr-classic-player .gdlr-soccer-player-position{ color: #9a9a9a; } 
-.gdlr-modern-player .gdlr-modern-player-item-content, .gdlr-modern-player .gdlr-modern-player-item-content a, .gdlr-modern-player .gdlr-modern-player-item-content a:hover{ color: #ffffff; } 
-.gdlr-soccer-match-results-wrapper{ color: #ffffff; } 
-.gdlr-soccer-match-results-overlay{ background-color: #a73233; } 
-.upcoming-match-overlay{ background-color: #aa4243; } 
-.upcoming-match-info-overlay{ background-color: #000000; } 
-.upcoming-match-item-wrapper, .upcoming-match-item-wrapper a{ color: #ffffff; } 
-.small-result-item.even, .result-in-month.even{ background-color: #f3f3f3; } 
-.small-result-item.odd, .result-in-month.odd{ background-color: #ebebeb; } 
-.gdlr-small-league-table th{ background-color: #212121; } .gdlr-small-league-table tr:first-child{ border-color: #212121; }
-.gdlr-small-league-table th{ color: #ffffff; } 
-.gdlr-small-league-table{ background-color: #f5f5f5; } 
-.gdlr-small-league-table *{ border-color: #dedede; } 
-.gdlr-league-table tr th{ color: #ffffff; } 
-.gdlr-league-table tr th{ border-color: #000000; } 
-.gdlr-league-table .gdlr-table-first-head th{ background-color: #373737; } 
-.gdlr-league-table .gdlr-table-second-head th{ background-color: #212121; } 
-.gdlr-league-table tr td{ border-color: #e1e1e1; } 
-.gdlr-league-table tr:nth-child(even) td{ background-color: #ebebeb; } 
-.gdlr-league-table tr:nth-child(odd) td{ background-color: #f3f3f3; } 
 .gdlr-personnel-item .personnel-item-inner{ background-color: #f5f5f5; }
 .gdlr-personnel-item.round-style .personnel-item{ background-color: #aa4243; }
 .gdlr-personnel-item .personnel-author{ color: #3b3b3b; }

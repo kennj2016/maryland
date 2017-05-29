@@ -21,6 +21,7 @@ function es_submit_page(e, url) {
 		if ( es_email.value == "" ) {
 			alert(es_widget_notices.es_email_notice);
 			es_email.focus();
+            jQuery('#es_txt_button').removeClass('disable')
 			return false;    
 		}
 
@@ -28,6 +29,7 @@ function es_submit_page(e, url) {
 			alert(es_widget_notices.es_incorrect_email);
 			es_email.focus();
 			es_email.select();
+            jQuery('#es_txt_button').removeClass('disable')
 			return false;
 		}
 
@@ -63,6 +65,7 @@ function es_submit_request(url, parameters, es_widget_form) {
 		}
 	}
 	if (!http_req) {
+        jQuery('#es_txt_button').removeClass('disable')
 		alert(es_widget_notices.es_ajax_error);
 		return false;
 	}
@@ -124,6 +127,7 @@ function eemail_submitresult(es_widget_form) {
 		 		}
 			}
 		} else {
+            jQuery('#es_txt_button').removeClass('disable')
 			alert(es_widget_notices.es_problem_request);
 		}
 	}

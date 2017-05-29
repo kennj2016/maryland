@@ -841,10 +841,12 @@ body .ms-skin-default .ms-slide .ms-slide-vcbtn { top: auto; bottom: 60px; right
 .gdlr-main-menu > .gdlr-normal-menu li, .gdlr-main-menu > .gdlr-mega-menu .sf-mega {
 	background-color: #1b2932;
 }
+.sf-menu > .gdlr-normal-menu li a:hover {
+	color: #1cb9c8;
+}
 .sf-menu > .gdlr-normal-menu li a {
 	padding: 17px 15px;
-	border-top-width: 1px;
-	border-top-style: solid;
+	border-bottom: 1px solid #262d3d;
 	zoom: 1;
 }
 

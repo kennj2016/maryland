@@ -20,13 +20,13 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'mmsoft');
+define('DB_NAME', 'wpkantek_mmsoft');
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', 'wpkantek_main');
 
 /** MySQL database password */
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', 'P@ssword!23');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');

@@ -228,3 +228,13 @@ body.single.single-post .gdlr-blog-full .gdlr-blog-thumbnail img {
 div#html5-watermark {
     opacity: 0 !important;
 }
+
+div.wpcf7-mail-sent-ok {
+    border: 1px solid #398f14;
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 10px;
+    background: #f2fde5;
+}

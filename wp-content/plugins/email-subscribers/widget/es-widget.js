@@ -1,4 +1,25 @@
 ﻿// For Widget
+
+jQuery(document).ready(function () {
+    toastr.options = {
+        "closeButton": true,
+        "newestOnTop": false,
+        "progressBar": false,
+        "positionClass": "toast-top-right",
+        "preventDuplicates": false,
+        "onclick": null,
+        "showDuration": "300",
+        "hideDuration": "1000",
+        "timeOut": "5000",
+        "extendedTimeOut": "1000",
+        "showEasing": "swing",
+        "hideEasing": "linear",
+        "showMethod": "fadeIn",
+        "hideMethod": "fadeOut"
+    }
+})
+
+
 function es_submit_page(e, url) {
 
 	// Finding the active Form - from where the button is clicked
@@ -19,14 +40,16 @@ function es_submit_page(e, url) {
 		var es_group = es_widget_form.querySelector( "input[name=es_txt_group]" );
 
 		if ( es_email.value == "" ) {
-			alert(es_widget_notices.es_email_notice);
+
+            toastr.error(es_widget_notices.es_email_notice)
 			es_email.focus();
             jQuery('#es_txt_button').removeClass('disable')
 			return false;    
 		}
 
 		if ( es_email.value != "" && ( es_email.value.indexOf("@",0) == -1 || es_email.value.indexOf(".",0) == -1 ) ) {
-			alert(es_widget_notices.es_incorrect_email);
+
+            toastr.error(es_widget_notices.es_incorrect_email)
 			es_email.focus();
 			es_email.select();
             jQuery('#es_txt_button').removeClass('disable')
@@ -66,7 +89,7 @@ function es_submit_request(url, parameters, es_widget_form) {
 	}
 	if (!http_req) {
         jQuery('#es_txt_button').removeClass('disable')
-		alert(es_widget_notices.es_ajax_error);
+        toastr.error(es_widget_notices.es_ajax_error)
 		return false;
 	}
 
@@ -102,7 +125,7 @@ function eemail_submitresult(es_widget_form) {
 						es_email.value = "";
 						es_name.value = "";
 					} else if((http_req.responseText).trim() == "subscribed-pending-doubleoptin") {
-						alert(es_widget_notices.es_success_notice);
+                        toastr.success('Successfully Subscribed.')
 						esSuccessEvent.detail.es_response = 'success';
 						es_msg_text = es_widget_notices.es_success_message;
 						es_email.value = "";

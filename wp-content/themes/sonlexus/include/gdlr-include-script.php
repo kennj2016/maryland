@@ -121,6 +121,7 @@
 
 
             $array['style']['style-venobox'] = GDLR_PATH . '/stylesheet/venobox.css';
+            $array['style']['style-toastr'] = GDLR_PATH . '/stylesheet/toastr.min.css';
 
             // include responsive style
 			if( empty($theme_option['enable-responsive-mode']) || $theme_option['enable-responsive-mode'] == 'enable' ){
@@ -129,6 +130,10 @@
 			
 			// include theme script / style
 			$array['script']['venobox'] = GDLR_PATH . '/javascript/venobox.min.js';
+
+
+			$array['script']['toastr'] = GDLR_PATH . '/javascript/toastr.min.js';
+
 			$array['script']['gdlr-script'] = GDLR_PATH . '/javascript/main.js';
 			$array['script']['main'] = GDLR_PATH . '/javascript/gdlr-script.js';
 

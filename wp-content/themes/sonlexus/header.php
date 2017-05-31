@@ -64,7 +64,7 @@
                     <div class="contact_email">
                         <ul>
                             <li><span><i class="icofont icofont-phone"></i>Call: </span><a href="tel:<?=$theme_option['site-phone'] ?>"><?=$theme_option['site-phone']; ?></a></li>
-                            <li><span><i class="icofont icofont-envelope"></i>Email: </span><a href="mailto:<?=$theme_option['site-phone'] ?>"><?=$theme_option['site-phone']; ?></a></li>
+                            <li><span><i class="icofont icofont-envelope"></i>Email: </span><a href="mailto:<?=$theme_option['email'] ?>"><?=$theme_option['email']; ?></a></li>
                         </ul>
                     </div>
 

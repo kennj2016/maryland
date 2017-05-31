@@ -2,19 +2,25 @@
 function right_contact_info( $atts ) {
     global $theme_option;
 
-    $ret =  "
-	<div class=\"col-md-offset-1 col-md-3 col-sm-5 col-xs-12\">
+     $ret =  "
+        <div class=\"col-md-offset-1 col-md-3 col-sm-5 col-xs-12\">
         <div class=\"contact_address_wrapper\">
             <div class=\"contact_title\">
             <h4>We’re here to help you</h4>
             </div>
-            <ul class=\"contact_address\">
-            <li><i class=\"icofont icofont-phone\"></i> Call : ".$theme_option['site-phone']."</li>
-            <li><i class=\"icofont icofont-envelope\"></i> Email : ".$theme_option['email']."</li>
-            <li><i class=\"icofont icofont-social-google-map\"></i> ".$theme_option['address']."</li>
-            </ul>
-           
-	";
+            <ul class=\"contact_address\"> ";
+			
+			if(!empty($theme_option['site-phone'])){
+				 $ret .= "<li><i class=\"icofont icofont-phone\"></i> Call : ".$theme_option['site-phone']."</li>";	
+			}		
+			if(!empty($theme_option['email'])){
+				 $ret .= "<li><i class=\"icofont icofont-envelope\"></i> Email : ".$theme_option['email']."</li>";	
+			}		
+			if(!empty($theme_option['address'])){
+				 $ret .= "<li><i class=\"icofont icofont-social-google-map\"></i> ".$theme_option['address']."</li>"	;
+			}    
+			
+$ret .="</ul>";
     $ret.= "<div class='social_icons'><ul>";
     $ret.= social_list();
     $ret.= "</ul></div></div>  </div>";

@@ -290,7 +290,7 @@
 					return ' href="' . $image_full[0] . '" data-rel="fancybox" ';
 				case 'url': 
 					$ret  = ' href="' . $post_option['thumbnail-url'] . '" ';
-					$ret .= ($post_option['thumbnail-new-tab'] == 'enable')? 'target="_blank" ': '';
+					//$ret .= ($post_option['thumbnail-new-tab'] == 'enable')? 'target="_blank" ': '';
 					return $ret;
 				case 'image': return ' href="' . $post_option['thumbnail-url'] . '" data-rel="fancybox" ';
 				case 'video': return ' href="' . $post_option['thumbnail-url'] . '" data-rel="fancybox" data-fancybox-type="iframe" ';

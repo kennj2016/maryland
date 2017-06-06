@@ -42,14 +42,10 @@
 				var port_item = $(data).hide();
 				if( animate_complete ){
 					gdlr_bind_portfolio_item(port_holder, port_item);
-				}else{
-					setTimeout(function() {
-						gdlr_bind_portfolio_item(port_holder, port_item);
 
-                        $('.venobox').venobox({
-                            numeratio: true
-                        });
-					}, 500);
+				}else{
+                    gdlr_bind_portfolio_item(port_holder, port_item);
+
 				}	
 			}
 		});		
@@ -80,6 +76,13 @@
 			});
 		}
 		port_item.find('img').load(function(){ $(window).trigger('resize'); });
+
+        setTimeout(function() {
+            $('.venobox').venobox({
+                numeratio: true
+            });
+        }, 1000);
+
 	}
 	
 	$.fn.gdlr_bind_portfolio_pagination = function(){

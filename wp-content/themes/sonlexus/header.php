@@ -24,7 +24,7 @@
 		wp_head(); 
 	?>
 
-	<link rel="stylesheet" href="<?php echo GDLR_PATH . '/stylesheet/style-son.css'; ?>">
+	<link rel="stylesheet" href="<?php echo GDLR_PATH . '/stylesheet/style-last.css'; ?>">
 </head>
 
 <body <?php body_class(); ?>>

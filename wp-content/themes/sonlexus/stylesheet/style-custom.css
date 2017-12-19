@@ -1,6 +1,6 @@
 html.ltie9 body, body{ min-width: 1140px; } .container{ max-width: 1140px; } .gdlr-caption-wrapper .gdlr-caption-inner{ max-width: 1140px; }
 .body-wrapper.gdlr-boxed-style{ max-width: 1220px; overflow: hidden; } .body-wrapper.gdlr-boxed-style .gdlr-header-wrapper{ max-width: 1220px; margin: 0px auto; }
-.gdlr-logo{ max-width: 320px; }
+.gdlr-logo{ max-width: 500px; }
 .gdlr-logo{ padding-top: 28px; }
 .gdlr-logo{ padding-bottom: 28px; }
 h1, h2, h3, h4, h5, h6, .gdlr-title-font{ font-family: "Open Sans Condensed"; }
@@ -177,10 +177,10 @@ body .nivo-directionNav a, body .flex-direction-nav a, body .flex-direction-nav 
 input[type="text"], input[type="email"], input[type="password"], textarea{ background-color: #f5f5f5; }
 input[type="text"], input[type="email"], input[type="password"], textarea{ color: #b5b5b5; }input::input-placeholder{ color:#b5b5b5; } input::-webkit-input-placeholder{ color:#b5b5b5; }input::-moz-placeholder{ color:#b5b5b5; } input:-moz-placeholder{ color:#b5b5b5; }input:-ms-input-placeholder{ color:#b5b5b5; }textarea::input-placeholder{ color:#b5b5b5; } textarea::-webkit-input-placeholder{ color:#b5b5b5; }textarea::-moz-placeholder{ color:#b5b5b5; } textarea:-moz-placeholder{ color:#b5b5b5; }textarea:-ms-input-placeholder{ color:#b5b5b5; }
 .footer-wrapper{ background-color: #262626; }
-.footer-wrapper .gdlr-widget-title, .footer-wrapper .gdlr-widget-title a{ color: #dddddd; }
-.footer-wrapper{ color: #bfbfbf; }
-.footer-wrapper a{ color: #7f7f7f; }
-.footer-wrapper a:hover{ color: #cecece; }
+.footer-wrapper .gdlr-widget-title, .footer-wrapper .gdlr-widget-title a{ color: #ffffff; }
+.footer-wrapper{ color: #ffffff; }
+.footer-wrapper a{ color: #ffffff; }
+.footer-wrapper a:hover{ color: #ffffff; }
 .footer-wrapper *{ border-color: #363636; }
 .footer-wrapper input[type="text"], .footer-wrapper input[type="email"], .footer-wrapper input[type="password"], .footer-wrapper textarea{ background-color: #141414; }
 .footer-wrapper input[type="text"], .footer-wrapper input[type="email"], .footer-wrapper input[type="password"], .footer-wrapper textarea{ color: #828282; }

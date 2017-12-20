@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6, .gdlr-title, .gdlr-title a{ color: #454545; }
 .gdlr-item-title-divider{ border-color: #c5c5c5; } .gdlr-item-title-wrapper.pos-left .gdlr-item-title:before, .gdlr-result-by-month-header:before{ color: #c5c5c5; }
 .gdlr-item-title-wrapper .gdlr-item-caption{ color: #9b9b9b; }
 body{ color: #808080; }
-a{ color: #1cb9c8; }
+a{ color: #df7e00; }
 a:hover{ color: #aa4243; }
 body *{ border-color: #e5e5e5; }
 .page-not-found-block{ background-color: #d65938; }

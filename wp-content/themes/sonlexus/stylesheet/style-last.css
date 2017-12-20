@@ -846,15 +846,17 @@ body .ms-skin-default .ms-slide .ms-slide-vcbtn { top: auto; bottom: 60px; right
 	color: #1b2932;
 }
 .gdlr-main-menu > .gdlr-normal-menu li, .gdlr-main-menu > .gdlr-mega-menu .sf-mega {
-	background-color: #603b14;
+	background-color: #a76621;
+	border-color: #df7e00;
 }
 .sf-menu > .gdlr-normal-menu li a:hover {
 	color: #f3f5f5;
-	background: #714516;
+	background: #965c1e;
 }
 .sf-menu > .gdlr-normal-menu li a {
 	padding: 17px 15px;
-	border-bottom: 1px solid #754717;
+	border-color: #86581e;
+	border-bottom: 1px solid #bd7326;
 	zoom: 1;
 }
 
@@ -894,6 +896,7 @@ body .ms-skin-default .ms-slide .ms-slide-vcbtn { top: auto; bottom: 60px; right
 }
 .footer-container {
 	padding: 50px 0;
+	display: none;
 }
 .footer-wrapper{
 	position: relative;
@@ -976,7 +979,7 @@ div.wpcf7-validation-errors {
 	position: relative;
 	font-size: 30px;
 	line-height: 36px;
-	margin-bottom: 70px;
+	margin-bottom: 40px;
 }
 #section-contact .social_icons ul{margin: 0}
 #section-contact .social_icons{
@@ -1048,4 +1051,79 @@ footer .es_widget_form input[type="text"] {
 body.single .gdlr-blog-full {
 	border-bottom: 0px;
 	padding-right: 20px;
+}
+
+
+
+.progressbar {
+	counter-reset: step;
+	margin: 0;
+}
+.progressbar li {
+	list-style: none;
+	display: inline-block;
+	width: 24.33%;
+	position: relative;
+	text-align: center;
+	/* cursor: pointer; */
+}
+.progressbar li:before {
+	content: counter(step);
+	counter-increment: step;
+	width: 30px;
+	height: 30px;
+	line-height : 30px;
+	border: 1px solid #ddd;
+	border-radius: 100%;
+	display: block;
+	text-align: center;
+	margin: 0 auto 10px auto;
+	background-color: #fff;
+	z-index: 2;
+	position: relative;
+}
+.progressbar li:after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	background-color: #ddd;
+	top: 15px;
+	left: -50%;
+	z-index: 0;
+}
+.progressbar li:first-child:after {
+	content: none;
+}
+.progressbar li.active {
+	color: #df7e00;
+}
+.progressbar li.active:before {
+	border-color: #df7e00;
+}
+.progressbar li.active + li:after {
+	background-color: #df7e00;
+}
+
+.copyright-left{
+	font-size: 12px;
+}
+
+.copyright-right {
+	font-size: 12px;
+}
+.copyright-left p,.copyright-right p{
+	margin: 0;
+}
+.copyright-right p span:first-child,.copyright-left p span:first-child{margin-right: 20px;}
+.copyright-right p span:last-child{}
+@media screen and (max-width: 992px){
+	.progressbar li{
+		display: block;
+		width: 100%;
+		font-size: 20px;
+		color: #df7e00;
+
+	}
+	.progressbar li:before,.progressbar li:after{content: none !important;}
 }

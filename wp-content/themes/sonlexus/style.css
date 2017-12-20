@@ -216,6 +216,7 @@ img.gdlr-full-boxed-background{ min-height: 100%; min-width: 1024px;
 	background-image: url('images/header2.jpg');
 	background-repeat: repeat;
 	/* background-position: center; */
+	background-position: right;
 }
 .gdlr-header-container{ position: relative; z-index: 97; }
 .gdlr-header-wrapper.gdlr-no-height { position: absolute; top: 0px; left: 0px; right: 0px; background: transparent; }

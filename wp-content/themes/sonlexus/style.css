@@ -1546,3 +1546,29 @@ only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device
 .gdlr-small-league-table .gdlr-table-team .gdlr-team-flag{ max-width: 25px; margin-right: 9px; }
 .fixture-result-item-holder .gdlr-team-flag {max-width: 35px; }
 .fixture-result-item-holder .small-result-item .gdlr-team-flag { max-width: 15px; display: none; }
+
+table.style2 td{
+	border-bottom-width:0;
+	padding:0;
+
+}
+ul {
+	margin-left: 0px;
+}
+li{
+	list-style: none;
+}
+ul.ul_popular_link li{
+	color: #909090;
+	font-size: 12px;
+}
+
+ul.ul_popular_link a,ul.ul_service_area a{
+	display: block;
+	font-weight: bold;
+	font-size: 14px;
+}
+ul.ul_service_area a{
+	display: inline-block;
+}
+table.style2 td{text-align: left}

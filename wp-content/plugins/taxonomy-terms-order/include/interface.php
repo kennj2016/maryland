@@ -101,7 +101,7 @@
                             <table cellspacing="0" class="wp-list-taxonomy">
                                 <thead>
                                 <tr>
-                                    <th style="" class="column-cb check-column" id="cb" scope="col">&nbsp;</th><th style="" class="" id="author" scope="col"><?php _e( "Taxonomy Title", 'taxonomy-terms-order' ) ?></th><th style="" class="manage-column" id="categories" scope="col"><?php _e( "Total  Posts", 'taxonomy-terms-order' ) ?></th>    </tr>
+                                    <th style="" class="column-cb check-column" id="cb" scope="col">&nbsp;</th><th style="" class="" id="author" scope="col"><?php _e( "Taxonomy Title", 'taxonomy-terms-order' ) ?></th><th style="" class="manage-column" id="categories" scope="col"><?php _e( "Total Posts", 'taxonomy-terms-order' ) ?></th>    </tr>
                                 </thead>
 
    
@@ -115,7 +115,11 @@
 
                                             $alternate = $alternate === TRUE ? FALSE :TRUE;
                                             
-                                            $taxonomy_terms = get_terms($key);
+                                            $args = array(
+                                                        'hide_empty'    =>  0,
+                                                        'taxonomy'      =>  $post_type_taxonomy
+                                                        );
+                                            $taxonomy_terms = get_terms( $args );
                                                              
                                             ?>
                                                 <tr valign="top" class="<?php if ($alternate === TRUE) {echo 'alternate ';} ?>" id="taxonomy-<?php echo esc_attr($taxonomy)  ?>">

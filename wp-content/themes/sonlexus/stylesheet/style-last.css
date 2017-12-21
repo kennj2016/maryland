@@ -791,11 +791,14 @@ body .ms-skin-default .ms-slide .ms-slide-vcbtn { top: auto; bottom: 60px; right
 	border: 1px solid #e49105;
 	color: #e49105;
 }
-#section-contact input[type="text"],#section-contact  input[type="email"],#section-contact  input[type="password"],#section-contact  textarea {
+#section-contact select,#section-contact input[type="text"],#section-contact  input[type="email"],#section-contact  input[type="password"],#section-contact  textarea {
 	background-color: #ffffff;
 	padding: 18px 15px !important;
-	border: 1px solid #efeded;
+	border: 1px solid #a9a8a7;
 	border-radius: 3px !important;
+}
+#section-contact select{
+	width:50%
 }
 .portfolio-item-filter {
 	margin-top: 10px;

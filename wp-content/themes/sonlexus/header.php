@@ -77,6 +77,25 @@
                     </div>
 
 				</div>
+                <div class="wrap-search wrap-search-top">
+<!--                    <i class="icon-search gdlr-menu-search-button" id="gdlr-menu-search-button" ></i>-->
+                    <div class="gdlr-menu-search" id="gdlr-menu-search">
+                        <form method="get" id="searchform" action="<?php  echo home_url(); ?>/">
+                            <?php
+                            $search_val = get_search_query();
+                            if( empty($search_val) ){
+                                $search_val = __("Type Keywords" , "gdlr_translate");
+                            }
+                            ?>
+                            <div class="search-text">
+                                <input type="text" value="<?php echo $search_val; ?>" name="s" autocomplete="off" data-default="<?php echo $search_val; ?>" />
+                                <i onclick="javascript:void(0); jQuery('#searchform').submit() " class="icon-search" ></i>
+                            </div>
+                            <input type="submit" value="" />
+                            <div class="clear"></div>
+                        </form>
+                    </div>
+                </div>
 				<div class="clear"></div>
 			</div>
 		</div>

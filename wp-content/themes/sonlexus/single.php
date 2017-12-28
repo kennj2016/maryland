@@ -52,7 +52,7 @@
 							</div>
 						<?php } ?>
 
-						<?php comments_template( '', true ); ?>
+						<?php comments_template( '', false ); ?>
 
 					<?php } ?>
 					</div>

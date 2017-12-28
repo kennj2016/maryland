@@ -1418,4 +1418,6 @@ table.style2.style-select td{
 		height: 4600px !important;
 	}
 }
-
+.archive.category.category-blogs.category-5.logged-in.admin-bar._masterslider.customize-support .gdlr-page-title-wrapper{
+	display: none;
+}

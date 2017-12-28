@@ -44,7 +44,7 @@
 
 
 //                echo '<div class="btn-red">';
-                echo '<br><a class="btn-read" href="' . get_permalink() . '" >Read More</a>';
+//                echo '<br><a class="btn-read" href="' . get_permalink() . '" >Read More</a>';
 //                echo '</div>';
 
                 echo '</div>';

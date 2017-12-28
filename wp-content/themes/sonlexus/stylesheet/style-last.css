@@ -1321,10 +1321,10 @@ div#slider_mobile > p {
 		padding: 5px 10px;
 	}
 }
-table.style2 td:before{
-	content: '*';
-	padding-right:10px;
-	color: red;
+table.style-select td:before{
+	content: '*' !important;
+	padding-right:10px !important;
+	color: red !important;
 	/*content: counter(step);*/
 	/*counter-increment: step;*/
 	/*width: 30px;*/
@@ -1339,3 +1339,13 @@ table.style2 td:before{
 	/*z-index: 2;*/
 	/*position: relative;*/
 }
+table.style2 td{
+    border: 1px solid #f0f0f0;
+    text-align: center;   
+}
+
+table.style2.style-select td{
+    border: none;
+    text-align: left;   
+}
+

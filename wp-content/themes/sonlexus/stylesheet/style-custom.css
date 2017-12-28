@@ -241,3 +241,23 @@ div.wpcf7-mail-sent-ok {
 .gdlr-page-title-wrapper {
     background-position: right;
 }
+
+.subtext{
+display:block;
+}
+
+@media screen and (min-width:992px){
+.subtext
+{
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    color: #9a9a9a;
+    font-style: italic;
+
+}
+
+
+}

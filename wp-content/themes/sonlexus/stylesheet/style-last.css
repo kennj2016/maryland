@@ -1339,7 +1339,7 @@ table.style-select td:before{
 	/*z-index: 2;*/
 	/*position: relative;*/
 }
-<<<<<<< HEAD
+
 table.style2 td{
     border: 1px solid #f0f0f0;
     text-align: center;   
@@ -1350,7 +1350,6 @@ table.style2.style-select td{
     text-align: left;   
 }
 
-=======
 .gdlr-item-start-content.sidebar-right-item{
 	padding-left: 10px;
 	padding-right: 10px;
@@ -1415,4 +1414,4 @@ table.style2.style-select td{
 		max-width: 100%;
 	}
 }
->>>>>>> faf388b700b324f116e87db0ff59ab261fc0c3b1
+

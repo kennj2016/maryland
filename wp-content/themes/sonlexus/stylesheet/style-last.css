@@ -1424,4 +1424,5 @@ table.style2.style-select td{
 .no-margin .gdlr-shortcode-wrapper{
 	margin-left: 0;
 	margin-right: 0;
+	padding:0 10px;
 }

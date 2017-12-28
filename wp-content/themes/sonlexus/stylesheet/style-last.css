@@ -1350,6 +1350,7 @@ table.style2.style-select td{
     text-align: left;   
 }
 
+
 .gdlr-item-start-content.sidebar-right-item{
 	padding-left: 10px;
 	padding-right: 10px;
@@ -1412,6 +1413,9 @@ table.style2.style-select td{
 	}
 	.media-body-content{
 		max-width: 100%;
+	}
+	.frame-pay{
+		height: 4600px !important;
 	}
 }
 

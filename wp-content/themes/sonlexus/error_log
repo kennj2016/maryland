@@ -1,0 +1,8 @@
+[10-Jan-2018 23:40:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/jvkju2kek701/public_html/wp-content/themes/sonlexus/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/jvkju2kek701/public_html/wp-content/themes/sonlexus/index.php on line 1
+[11-Jan-2018 23:46:38 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/jvkju2kek701/public_html/wp-content/themes/sonlexus/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/jvkju2kek701/public_html/wp-content/themes/sonlexus/index.php on line 1

@@ -222,6 +222,21 @@ html .woocommerce .quantity .minus, html .woocommerce #content .quantity .minus,
 .gdlr-skin-dark-skin .gdlr-skin-box, .gdlr-skin-dark-skin .gdlr-column-service-item .gdlr-skin-box, .gdlr-skin-dark-skin .gdlr-flex-prev, .gdlr-skin-dark-skin .gdlr-flex-next{ background-color: #aa4243; }
 .gdlr-skin-dark-skin *, .gdlr-skin-dark-skin .gdlr-skin-border{ border-color: #ffffff; }
 .gdlr-skin-dark-skin .gdlr-button, .gdlr-skin-dark-skin .gdlr-button:hover, .gdlr-skin-dark-skin input[type="button"], .gdlr-skin-dark-skin input[type="submit"]{ color: #ffffff; background-color: #ffffff;  }
+.c-green{color:#5c9430}
+.c-blue{color:#2f5cb1}
+.c-black{color:#000000}
+.bold{    font-weight: bold;}
+
+ol{    margin-left: 15px;}
+ol li {
+    list-style: decimal !important; 
+}
+table.style-5 {
+margin-bottom:20px;
+}
+table.style-5 tr th{text-align:center}
+table.style-5 tr td{padding:10px;;    border: 1px solid #ddd;    text-align: center;}
+
 body.single.single-post .gdlr-blog-full .gdlr-blog-thumbnail img {
     display: none;
 }
